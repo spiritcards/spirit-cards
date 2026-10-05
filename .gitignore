@@ -1,0 +1,20 @@
+# dependencies / build artifacts
+node_modules/
+.next/
+out/
+cache/
+*.tsbuildinfo
+
+# env & secrets — NEVER commit
+.env
+.env*
+!.env*.example
+*.kdbx
+*.pem
+*.key
+keystore/
+wallets/
+
+# os / editor
+.DS_Store
+Thumbs.db

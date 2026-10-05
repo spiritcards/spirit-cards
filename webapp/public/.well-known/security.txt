@@ -1,0 +1,7 @@
+# Security contact for the Spirit Cards web property (RFC 9116).
+# Please report suspected vulnerabilities privately before public disclosure.
+Contact: https://github.com/spiritcards/spirit-cards/security/advisories/new
+Contact: https://t.me/spirit_cards_game
+Expires: 2027-09-18T00:00:00.000Z
+Preferred-Languages: en, ru
+Canonical: https://spiritcards.fun/.well-known/security.txt

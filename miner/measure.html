@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Spirit Cards — Phone Hashrate</title>
+<style>
+  :root {
+    --bg: #07090f;
+    --panel: #10141f;
+    --line: #212a3d;
+    --fg: #e8f0ff;
+    --dim: #8b9bb8;
+    --acc: #38f0a0;
+    --acc2: #63b3ff;
+    --warn: #ff6b6b;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); }
+  body {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    padding: 16px 14px 40px;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1 { font-size: clamp(15px, 4.4vw, 22px); letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin: 6px 0 2px; color: var(--fg); }
+  .sub { color: var(--dim); font-size: clamp(11px, 3.2vw, 14px); margin-bottom: 14px; word-break: break-all; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px 14px; margin: 12px 0; }
+
+  #hashrate {
+    font-size: clamp(56px, 22vw, 150px);
+    line-height: 1;
+    font-weight: 800;
+    color: var(--acc);
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 26px rgba(56,240,160,.35);
+    letter-spacing: -.02em;
+  }
+  #hashunit { font-size: clamp(18px, 6vw, 34px); color: var(--acc); font-weight: 700; letter-spacing: .08em; }
+  #hashlabel { color: var(--dim); font-size: clamp(11px, 3.2vw, 14px); text-transform: uppercase; letter-spacing: .18em; margin-top: 6px; }
+
+  .stats { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 8px; color: var(--dim); font-size: clamp(11px, 3.2vw, 14px); }
+  .stats b { color: var(--fg); font-variant-numeric: tabular-nums; }
+
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th, td { padding: 12px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--dim); font-weight: 600; font-size: clamp(10px, 3vw, 13px); text-transform: uppercase; letter-spacing: .1em; }
+  td { font-size: clamp(18px, 6.2vw, 30px); font-weight: 700; }
+  td.bits { color: var(--acc2); }
+  td.time { color: var(--acc); }
+  tr:last-child td { border-bottom: none; }
+  .cur { color: var(--acc2); }
+
+  .status { font-size: clamp(11px, 3.4vw, 14px); color: var(--dim); margin-top: 10px; min-height: 1.2em; }
+  .status.err { color: var(--warn); }
+
+  .btns { display: flex; gap: 10px; justify-content: center; margin: 16px 0 4px; }
+  button {
+    font: inherit; font-weight: 700; font-size: clamp(13px, 3.8vw, 16px);
+    padding: 13px 22px; border-radius: 12px; cursor: pointer;
+    background: var(--acc); color: #04120c; border: none; min-width: 120px;
+  }
+  button.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+  button:active { transform: translateY(1px); }
+  .note { color: var(--dim); font-size: clamp(10px, 3vw, 12.5px); line-height: 1.6; text-align: left; margin-top: 10px; }
+  .note code { color: var(--acc2); word-break: break-all; }
+</style>
+</head>
+<body>
+  <h1>Spirit Cards</h1>
+  <div class="sub">keccak256(chainId ‖ contract ‖ miner ‖ nonce) · chainId 46630<br/>device hashrate (single thread)</div>
+
+  <div class="card">
+    <div id="hashrate">—</div>
+    <div id="hashunit">H/s</div>
+    <div id="hashlabel">measured hashrate</div>
+    <div class="stats">
+      <div>hashes <b id="total">0</b></div>
+      <div>runtime <b id="runtime">0.0s</b></div>
+      <div>hits≥20b <b id="hits">0</b></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th>baseBits</th><th>expected hashes</th><th>avg time (this device)</th></tr>
+      </thead>
+      <tbody id="tbl">
+        <tr><td class="bits">16</td><td>65,536</td><td class="time">…</td></tr>
+        <tr><td class="bits">18</td><td>262,144</td><td class="time">…</td></tr>
+        <tr><td class="bits">20 <span class="cur">● now</span></td><td>1,048,576</td><td class="time">…</td></tr>
+        <tr><td class="bits">22</td><td>4,194,304</td><td class="time">…</td></tr>
+      </tbody>
+    </table>
+    <div class="status" id="status">starting worker…</div>
+  </div>
+
+  <div class="btns">
+    <button id="toggle">Stop</button>
+    <button id="reset" class="ghost">Reset</button>
+  </div>
+
+  <div class="note">
+    <b>How to read:</b> the big number is your phone's keccak speed. The table is the average time to
+    find a valid mining nonce at each difficulty (2<sup>bits</sup> ÷ hashrate).<br/>
+    <span class="cur">●</span> marks the <b>currently deployed testnet difficulty (baseBits = 20)</b>.
+    Reference: a desktop Ryzen 7 5800H (Node, pure-JS) does ~211 kH/s → baseBits 20 in ~5 s.<br/>
+    keccak loaded from a CDN (<code>js-sha3</code>); the page needs internet on first load. Heat/battery
+    will throttle the number over time — read the first stable value.
+  </div>
+
+<script id="worker-src" type="text/js-worker">
+  var CDNS = [
+    'https://cdn.jsdelivr.net/npm/js-sha3@0.8.0/src/sha3.js',
+    'https://cdn.jsdelivr.net/npm/js-sha3@0.8.0/build/sha3.min.js',
+    'https://unpkg.com/js-sha3@0.8.0/build/sha3.min.js'
+  ];
+  var keccak = null;
+  for (var i = 0; i < CDNS.length && !keccak; i++) {
+    try { importScripts(CDNS[i]); } catch (e) {}
+    keccak = (typeof sha3 !== 'undefined' && sha3.keccak256) ? sha3.keccak256
+           : (self.sha3 && self.sha3.keccak256) ? self.sha3.keccak256 : null;
+  }
+
+  var CHAIN_ID = 46630n;
+  var CONTRACT = '717f3a0CABFe333FDa656D81c84A751450FE8531';
+  var MINER = '0000000000000000000000000000000000000000'; // dummy: measurement only
+
+  function hexToBytes(hex) {
+    hex = hex.replace(/^0x/, '');
+    if (hex.length & 1) hex = '0' + hex;
+    var out = new Uint8Array(hex.length >> 1);
+    for (var i = 0; i < out.length; i++) out[i] = parseInt(hex.substr(i * 2, 2), 16);
+    return out;
+  }
+  function beBytes(value, len) {
+    var out = new Uint8Array(len); var x = BigInt(value);
+    for (var i = len - 1; i >= 0; i--) { out[i] = Number(x & 0xffn); x >>= 8n; }
+    return out;
+  }
+  function buildPrefix() {
+    var p = new Uint8Array(72);
+    p.set(beBytes(CHAIN_ID, 32), 0);
+    p.set(hexToBytes(CONTRACT), 32);
+    p.set(hexToBytes(MINER), 52);
+    return p;
+  }
+  function leadingZeroBitsHex(hex) {
+    var c = 0;
+    for (var i = 0; i < hex.length; i++) {
+      var ch = hex.charCodeAt(i), nib;
+      if (ch >= 48 && ch <= 57) nib = ch - 48;
+      else if (ch >= 97 && ch <= 102) nib = ch - 87;
+      else if (ch >= 65 && ch <= 70) nib = ch - 55;
+      else continue;
+      if (nib === 0) { c += 4; continue; }
+      c += Math.clz32(nib) - 28; return c;
+    }
+    return c;
+  }
+
+  var prefix = buildPrefix();
+  var buf = new Uint8Array(104); buf.set(prefix, 0);
+  var nonce = new Uint8Array(32); buf.set(nonce, 72);
+  var running = false, attempts = 0, hits = 0, t0 = 0, lastPost = 0;
+  var CHUNK = 25000;
+
+  function tick() {
+    if (!running) return;
+    for (var i = 0; i < CHUNK; i++) {
+      var h = keccak(buf);
+      attempts++;
+      if (leadingZeroBitsHex(h) >= 20) hits++;
+      for (var k = 31; k >= 0; k--) { nonce[k] = (nonce[k] + 1) & 0xff; if (nonce[k] !== 0) break; }
+      buf.set(nonce, 72);
+    }
+    var now = performance.now();
+    if (now - lastPost >= 500) {
+      lastPost = now;
+      var el = (now - t0) / 1000;
+      postMessage({ type: 'progress', attempts: attempts, hits: hits, elapsedMs: now - t0, hashrate: attempts / el });
+    }
+    setTimeout(tick, 0);
+  }
+  function run() { running = true; attempts = 0; hits = 0; t0 = performance.now(); lastPost = 0; tick(); }
+
+  // Handshake LAST, after all state is initialised (worker messages are async,
+  // but this makes the bootstrap robust regardless of timing).
+  if (!keccak) {
+    postMessage({ type: 'error', message: 'could not load keccak from CDN (offline?)' });
+  } else {
+    self.onmessage = function (ev) { if (ev.data === 'start') run(); };
+    postMessage({ type: 'ready' });
+  }
+</script>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var worker = null, running = true, hashrate = 0, url = null;
+
+  function fmt(n) { return n.toLocaleString(); }
+  function human(s) {
+    if (!isFinite(s)) return '—';
+    if (s < 1) return (s * 1000).toFixed(0) + ' ms';
+    if (s < 60) return s.toFixed(1) + ' s';
+    if (s < 3600) return (s / 60).toFixed(1) + ' min';
+    if (s < 86400) return (s / 3600).toFixed(1) + ' h';
+    return (s / 86400).toFixed(1) + ' days';
+  }
+  function fmtRate(h) {
+    if (h >= 1e6) return { v: (h / 1e6).toFixed(2), u: 'MH/s' };
+    if (h >= 1e3) return { v: (h / 1e3).toFixed(1), u: 'kH/s' };
+    return { v: h.toFixed(0), u: 'H/s' };
+  }
+
+  function updateTable() {
+    var rows = $('tbl').rows;
+    [16, 18, 20, 22].forEach(function (bits, i) {
+      rows[i].cells[2].textContent = hashrate > 0 ? human(Math.pow(2, bits) / hashrate) : '…';
+    });
+  }
+
+  function onProgress(d) {
+    hashrate = d.hashrate;
+    var r = fmtRate(hashrate);
+    $('hashrate').textContent = r.v;
+    $('hashunit').textContent = r.u;
+    $('total').textContent = fmt(d.attempts);
+    $('runtime').textContent = (d.elapsedMs / 1000).toFixed(1) + 's';
+    $('hits').textContent = fmt(d.hits);
+    $('status').textContent = 'running · keccak via CDN · single thread';
+    $('status').className = 'status';
+    updateTable();
+  }
+
+  function startWorker() {
+    var src = $('worker-src').textContent;
+    var blob = new Blob([src], { type: 'application/javascript' });
+    url = URL.createObjectURL(blob);
+    worker = new Worker(url);
+    worker.onmessage = function (ev) {
+      var m = ev.data || {};
+      if (m.type === 'ready') worker.postMessage('start');
+      else if (m.type === 'progress') onProgress(m);
+      else if (m.type === 'error') { $('status').textContent = 'ERROR: ' + m.message; $('status').className = 'status err'; }
+    };
+    worker.onerror = function (e) { $('status').textContent = 'worker error: ' + e.message; $('status').className = 'status err'; };
+  }
+
+  $('toggle').onclick = function () {
+    if (running) { worker.terminate(); running = false; $('toggle').textContent = 'Start'; $('status').textContent = 'paused at ' + ($('hashrate').textContent) + ' ' + $('hashunit').textContent; }
+    else { startWorker(); running = true; $('toggle').textContent = 'Stop'; $('status').textContent = 'restarting…'; }
+  };
+  $('reset').onclick = function () {
+    if (worker) worker.terminate();
+    if (url) URL.revokeObjectURL(url);
+    hashrate = 0; running = true;
+    $('hashrate').textContent = '—'; $('hashunit').textContent = 'H/s';
+    $('total').textContent = '0'; $('runtime').textContent = '0.0s'; $('hits').textContent = '0';
+    $('toggle').textContent = 'Stop';
+    startWorker();
+  };
+
+  startWorker();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "15_card_frame",
+    "17_stats",
+    "08_base_art"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "clean-base",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "forest-pollen",
+        "nameEn": "Forest Pollen",
+        "empty": false
+      },
+      {
+        "value": "grove-glow",
+        "nameEn": "Grove Glow",
+        "empty": false
+      },
+      {
+        "value": "floating-seeds",
+        "nameEn": "Floating Seeds",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "canopy-sails",
+        "nameEn": "Canopy Sails",
+        "empty": false
+      },
+      {
+        "value": "petrified-fans",
+        "nameEn": "Petrified Fans",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "base",
+        "nameEn": "Burrow Curl",
+        "empty": false
+      },
+      {
+        "value": "variant",
+        "nameEn": "Verdant Sweep",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "root-antlers",
+        "nameEn": "Root Antlers",
+        "empty": false
+      },
+      {
+        "value": "bedrock-spurs",
+        "nameEn": "Bedrock Spurs",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "amberbloom-cluster",
+        "nameEn": "Amberbloom Cluster",
+        "empty": false
+      },
+      {
+        "value": "mossquartz-cluster",
+        "nameEn": "Mossquartz Cluster",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "strata-lines",
+        "nameEn": "Strata Lines",
+        "empty": false
+      },
+      {
+        "value": "lichen-flecks",
+        "nameEn": "Lichen Flecks",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "wildroot-sigil",
+        "nameEn": "Wildroot Sigil",
+        "empty": false
+      },
+      {
+        "value": "bedrock-seal",
+        "nameEn": "Bedrock Seal",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "calm",
+        "nameEn": "Quiet Grove",
+        "empty": false
+      },
+      {
+        "value": "playful",
+        "nameEn": "Woodland Grin",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "base",
+        "nameEn": "Amber Grove",
+        "empty": false
+      },
+      {
+        "value": "luminous",
+        "nameEn": "Saplight Gaze",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "seedheart",
+        "nameEn": "Seedheart",
+        "empty": false
+      },
+      {
+        "value": "gaia-geode",
+        "nameEn": "Gaia Geode",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

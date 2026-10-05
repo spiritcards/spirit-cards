@@ -1,0 +1,9 @@
+node_modules
+.next
+.vercel
+*.tsbuildinfo
+opencode.log
+# S1 art assets (unused in POC; replaced by POC traits later)
+public/traits
+public/traits-v2
+public/uniques

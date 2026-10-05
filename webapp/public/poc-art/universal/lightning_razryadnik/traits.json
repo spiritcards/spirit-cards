@@ -1,0 +1,246 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "08_base_art",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "default",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "discharge-scatter",
+        "nameEn": "Discharge Scatter",
+        "empty": false
+      },
+      {
+        "value": "electric-field",
+        "nameEn": "Electric Field",
+        "empty": false
+      },
+      {
+        "value": "lightning-branches",
+        "nameEn": "Lightning Branches",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "lightning-wings",
+        "nameEn": "Lightning Wings",
+        "empty": false
+      },
+      {
+        "value": "ion-ribbons",
+        "nameEn": "Ion Ribbons",
+        "empty": false
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "lightning-bend",
+        "nameEn": "Lightning Bend",
+        "empty": false
+      },
+      {
+        "value": "twin-bolt",
+        "nameEn": "Twin Bolt",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "spark-antennas",
+        "nameEn": "Spark Antennas",
+        "empty": false
+      },
+      {
+        "value": "discharge-arcs",
+        "nameEn": "Discharge Arcs",
+        "empty": false
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "storm-crystal",
+        "nameEn": "Storm Crystal",
+        "empty": false
+      },
+      {
+        "value": "amethyst-conductors",
+        "nameEn": "Amethyst Conductors",
+        "empty": false
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "none",
+        "nameEn": "Unmarked",
+        "empty": true
+      },
+      {
+        "value": "spark-speckles",
+        "nameEn": "Spark Speckles",
+        "empty": false
+      },
+      {
+        "value": "storm-zigzags",
+        "nameEn": "Storm Zigzags",
+        "empty": false
+      },
+      {
+        "value": "discharge-chain",
+        "nameEn": "Discharge Chain",
+        "empty": false
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "discharge-rune",
+        "nameEn": "Discharge Rune",
+        "empty": false
+      },
+      {
+        "value": "thunder-seal",
+        "nameEn": "Thunder Seal",
+        "empty": false
+      },
+      {
+        "value": "paired-lightning",
+        "nameEn": "Paired Lightning",
+        "empty": false
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "storm-calm",
+        "nameEn": "Storm Calm",
+        "empty": false
+      },
+      {
+        "value": "spark-grin",
+        "nameEn": "Spark Grin",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "lightning-pupil",
+        "nameEn": "Lightning Pupil",
+        "empty": false
+      },
+      {
+        "value": "white-flash",
+        "nameEn": "White Flash",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "storm-orb",
+        "nameEn": "Storm Orb",
+        "empty": false
+      },
+      {
+        "value": "lightning-knot",
+        "nameEn": "Lightning Knot",
+        "empty": false
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+openapi: 3.0.3
+info:
+  title: Spirit Cards API
+  version: 1.0.0
+  description: >-
+    Metadata, image, points and stats endpoints for Spirit Cards — a
+    proof-of-work minted collectible-card collection on Robinhood Chain
+    (chainId 4663, mainnet — live since 2026-10-05; testnet 46630 is the rehearsal stack; native ETH).
+    Images are deterministic placeholder PNGs
+    derived from the on-chain token seed (seedOf).
+servers:
+  - url: /
+paths:
+  /api/meta/{id}:
+    get:
+      summary: OpenSea-compatible metadata JSON for a minted card
+      operationId: getTokenMetadata
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Card id (1-based)
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        "200":
+          description: Metadata JSON
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TokenMetadata"
+        "404":
+          description: Card not minted yet
+  /api/image/{id}:
+    get:
+      summary: Deterministic placeholder PNG rendered from the card seed
+      operationId: getTokenImage
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+        - name: w
+          in: query
+          required: false
+          description: Thumbnail width in px (32..1024)
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: PNG image
+          content:
+            image/png:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: Card not minted yet
+  /api/points:
+    get:
+      summary: Activity points dataset
+      description: >-
+        Leaderboard of on-chain activity points. The agent registry is merged
+        into the response as `agents`; a registered address with no on-chain
+        activity is listed with zero points. Ranking is computed purely on-chain
+        — registry entries only annotate / append, they never boost a wallet.
+      operationId: getPoints
+      parameters:
+        - name: address
+          in: query
+          required: false
+          description: Return a single wallet instead of the leaderboard
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Points dataset JSON (wallets + merged agent registry)
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/points/register:
+    post:
+      summary: Register an AI agent wallet in the registry
+      description: >-
+        Self-serve registration: the agent signs a short 4-line message with its
+        own wallet (EIP-191 personal_sign) and POSTs it. No account, no manual
+        approval, no API key. The record is stored server-side and merged into
+        the /api/points leaderboard at runtime.
+      operationId: registerAgent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AgentRegistration"
+      responses:
+        "200":
+          description: Registered
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                  address:
+                    type: string
+                  listed:
+                    type: boolean
+        "400":
+          description: Invalid or malformed body
+        "401":
+          description: Bad signature, or timestamp older than 15 minutes
+        "429":
+          description: Rate limited
+        "503":
+          description: Registry storage not provisioned
+  /stats/current.json:
+    get:
+      summary: Machine-readable collection snapshot
+      operationId: getStatsSnapshot
+      responses:
+        "200":
+          description: Snapshot JSON
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StatsSnapshot"
+  /api/mcp:
+    post:
+      summary: Model Context Protocol (MCP) server — read-only tools over Streamable HTTP
+      description: >-
+        Stateless Streamable HTTP MCP endpoint. Anonymous and read-only: no API
+        keys, no accounts, no wallet, no writes. Tools: get_project_info,
+        get_collection_stats, get_card, verify_nonce, find_nonce,
+        get_mining_guide, get_leaderboard, get_pool, get_recent_activity.
+        Prompts: project_overview, start_mining.
+      operationId: mcpPost
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              description: JSON-RPC 2.0 message (initialize / tools/list / tools/call)
+      responses:
+        "200":
+          description: JSON-RPC 2.0 response (streamed as text/event-stream or JSON)
+          content:
+            application/json:
+              schema:
+                type: object
+            text/event-stream:
+              schema:
+                type: string
+    get:
+      summary: MCP discovery / handshake
+      operationId: mcpGet
+      responses:
+        "200":
+          description: MCP discovery response
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    TokenMetadata:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        image:
+          type: string
+        external_url:
+          type: string
+        attributes:
+          type: array
+          items:
+            type: object
+            properties:
+              trait_type:
+                type: string
+              value:
+                type: string
+    StatsSnapshot:
+      type: object
+      properties:
+        domain:
+          type: string
+        updatedAt:
+          type: string
+        chainId:
+          type: integer
+        contract:
+          type: string
+        totalMinted:
+          type: integer
+        maxSupply:
+          type: integer
+        currentPriceEth:
+          type: string
+        baseBits:
+          type: integer
+        mineCooldownSeconds:
+          type: integer
+        mergeFeeEth:
+          type: string
+        paused:
+          type: boolean
+    AgentRegistration:
+      type: object
+      required: [name, address, description, message, signature]
+      properties:
+        name:
+          type: string
+          maxLength: 64
+        address:
+          type: string
+          description: Agent wallet address (0x…, 20 bytes)
+        description:
+          type: string
+          maxLength: 280
+        links:
+          type: array
+          maxItems: 5
+          items:
+            type: object
+            required: [label, url]
+            properties:
+              label:
+                type: string
+              url:
+                type: string
+                format: uri
+        message:
+          type: string
+          description: >-
+            The exact signed text — four lines: "Spirit Cards — agent
+            registration", "address: <lowercase address>", "name: <name>",
+            "timestamp: <unix seconds>".
+        signature:
+          type: string
+          description: EIP-191 personal_sign of message (0x-prefixed, 130 hex chars)

@@ -1,0 +1,236 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "15_card_frame",
+    "17_stats",
+    "08_base_art"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "clean-base",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "metal-dust",
+        "nameEn": "Metal Dust",
+        "empty": false
+      },
+      {
+        "value": "silver-gleam",
+        "nameEn": "Silver Gleam",
+        "empty": false
+      },
+      {
+        "value": "reflection-shards",
+        "nameEn": "Reflection Shards",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "mercury-sails",
+        "nameEn": "Mercury Sails",
+        "empty": false
+      },
+      {
+        "value": "silver-plumes",
+        "nameEn": "Silver Plumes",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "base",
+        "nameEn": "Chrome Sweep",
+        "empty": false
+      },
+      {
+        "value": "variant",
+        "nameEn": "Quicksilver Ribbon",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "mercury-hooks",
+        "nameEn": "Mercury Hooks",
+        "empty": false
+      },
+      {
+        "value": "silver-antlers",
+        "nameEn": "Silver Antlers",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "mirrorstone-cluster",
+        "nameEn": "Mirrorstone Cluster",
+        "empty": false
+      },
+      {
+        "value": "quicksilver-bloom",
+        "nameEn": "Quicksilver Bloom",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "mirror-streaks",
+        "nameEn": "Mirror Streaks",
+        "empty": false
+      },
+      {
+        "value": "silver-flecks",
+        "nameEn": "Silver Flecks",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "alloy-sigil",
+        "nameEn": "Alloy Sigil",
+        "empty": false
+      },
+      {
+        "value": "mercury-script",
+        "nameEn": "Mercury Script",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "calm",
+        "nameEn": "Polished Calm",
+        "empty": false
+      },
+      {
+        "value": "playful",
+        "nameEn": "Mercury Grin",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "base",
+        "nameEn": "Amber Lens",
+        "empty": false
+      },
+      {
+        "value": "luminous",
+        "nameEn": "Forge Lens",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "mercury-droplet",
+        "nameEn": "Mercury Droplet",
+        "empty": false
+      },
+      {
+        "value": "magnet-star",
+        "nameEn": "Magnet Star",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

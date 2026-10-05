@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "canvas": [
+    1440,
+    1748
+  ],
+  "mobileCanvas": [
+    360,
+    437
+  ],
+  "units": "normalized-full-canvas",
+  "pack": {
+    "rect": [
+      0.2,
+      0.06407322654462243,
+      0.6,
+      0.8604118993135011
+    ]
+  },
+  "flap-top": {
+    "pivot": [
+      0.5,
+      0.12929061784897025
+    ]
+  },
+  "cards": {
+    "origin": [
+      0.5,
+      0.38
+    ]
+  },
+  "card-back": {
+    "rect": [
+      0.3472222222222222,
+      0.2574370709382151,
+      0.3055555555555556,
+      0.3524027459954233
+    ]
+  },
+  "burst": {
+    "frames": 4,
+    "frameSize": [
+      1440,
+      1748
+    ],
+    "mobileFrameSize": [
+      360,
+      437
+    ],
+    "fps": 10
+  },
+  "layerOrder": [
+    "01-body-back",
+    "02-cards-stack",
+    "03-glow",
+    "04-body-front",
+    "05-flap-top",
+    "06-tear-left",
+    "07-burst",
+    "08-sheen",
+    "card-back"
+  ],
+  "states": {
+    "SEALED": [
+      "01-body-back",
+      "04-body-front",
+      "05-flap-top"
+    ],
+    "CRACKING": [
+      "01-body-back",
+      "03-glow",
+      "04-body-front",
+      "05-flap-top"
+    ],
+    "OPEN": [
+      "01-body-back",
+      "02-cards-stack",
+      "03-glow",
+      "04-body-front",
+      "05-flap-top",
+      "06-tear-left"
+    ],
+    "BURST": [
+      "01-body-back",
+      "02-cards-stack",
+      "03-glow",
+      "04-body-front",
+      "05-flap-top",
+      "06-tear-left",
+      "07-burst"
+    ],
+    "CARD_BACK": [
+      "card-back"
+    ]
+  }
+}

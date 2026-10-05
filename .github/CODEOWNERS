@@ -1,0 +1,10 @@
+# Default owners for code review. Replace handles with the team before going public.
+# Syntax: <pattern>  <owner> [<owner> ...]
+
+*                       @spiritcards
+
+/contracts/             @spiritcards
+/webapp/                @spiritcards
+/miner/                 @spiritcards
+/docs/                  @spiritcards
+/.github/               @spiritcards

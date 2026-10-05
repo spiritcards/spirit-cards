@@ -1,0 +1,6 @@
+/* Cascade-layer order for the whole app. MUST be imported before every other
+   stylesheet so the legacy S1 cascade (globals.css + poa/*) lands in a layer
+   BELOW Tailwind: preflight < legacy < spirit components < utilities.
+   Result: Tailwind utilities and Spirit components win, while not-yet-migrated
+   legacy pages keep their exact look (nothing competes with them). */
+@layer theme, base, legacy, components, utilities;

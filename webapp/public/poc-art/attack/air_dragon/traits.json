@@ -1,0 +1,236 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "15_card_frame",
+    "17_stats",
+    "08_base_art"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "clean-base",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "cloud-dust",
+        "nameEn": "Cloud Dust",
+        "empty": false
+      },
+      {
+        "value": "sky-breath",
+        "nameEn": "Sky Breath",
+        "empty": false
+      },
+      {
+        "value": "breeze-ribbons",
+        "nameEn": "Breeze Ribbons",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "cirrus-fans",
+        "nameEn": "Cirrus Fans",
+        "empty": false
+      },
+      {
+        "value": "jetstream-plumes",
+        "nameEn": "Jetstream Plumes",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "base",
+        "nameEn": "Draft Curl",
+        "empty": false
+      },
+      {
+        "value": "variant",
+        "nameEn": "Gale Stream",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "gale-curls",
+        "nameEn": "Gale Curls",
+        "empty": false
+      },
+      {
+        "value": "skyswept-prongs",
+        "nameEn": "Skyswept Prongs",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "cloudglass-cluster",
+        "nameEn": "Cloudglass Cluster",
+        "empty": false
+      },
+      {
+        "value": "aetherquartz-cluster",
+        "nameEn": "Aetherquartz Cluster",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "slipstream-traces",
+        "nameEn": "Slipstream Traces",
+        "empty": false
+      },
+      {
+        "value": "cloud-dapple",
+        "nameEn": "Cloud Dapple",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "gale-sigil",
+        "nameEn": "Gale Sigil",
+        "empty": false
+      },
+      {
+        "value": "skyward-seal",
+        "nameEn": "Skyward Seal",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "calm",
+        "nameEn": "Soft Breeze",
+        "empty": false
+      },
+      {
+        "value": "playful",
+        "nameEn": "Zephyr Grin",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "base",
+        "nameEn": "Sky Gaze",
+        "empty": false
+      },
+      {
+        "value": "luminous",
+        "nameEn": "Windlit Gaze",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "whirlseed",
+        "nameEn": "Whirlseed",
+        "empty": false
+      },
+      {
+        "value": "skybell",
+        "nameEn": "Skybell",
+        "empty": false
+      },
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

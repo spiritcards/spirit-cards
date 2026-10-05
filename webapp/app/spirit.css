@@ -1,0 +1,229 @@
+/* =========================================================================
+   Spirit Cards — design system (Ore & Elements)
+   Tailwind v4 entry. Preflight is intentionally NOT imported so the legacy
+   S1 stylesheets (globals.css + poa/*) keep their exact rendering while we
+   migrate page by page. New surfaces are built with Tailwind utilities +
+   the component primitives defined at the bottom of this file.
+   ========================================================================= */
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* -------------------------------------------------------------------------
+   Design tokens — "Ore & Elements" (source: 00_МАСТЕР_БРИФ… §2)
+   @theme makes each token available as Tailwind utilities
+   (bg-obsidian, text-bone, border-slate, text-ember, ...).
+   ------------------------------------------------------------------------- */
+@theme {
+  /* base / neutrals */
+  --color-obsidian: #0e1116;
+  --color-basalt: #171b22;
+  --color-slate: #2a313b;
+  --color-ash: #8a93a0;
+  --color-bone: #ede7da;
+
+  /* ore accents (brand) */
+  --color-ember: #ff6a3d;
+  --color-gold: #e8b457;
+
+  /* elemental spectrum — point accents only */
+  --color-ice: #9fd8e6;
+  --color-tide: #3e9bd1;
+  --color-moss: #6fa860;
+  --color-storm: #b072e0;
+  --color-spark: #f2d14b;
+  --color-magma: #e24b2e;
+  --color-celestial: #8c7be0;
+
+  /* card stats */
+  --color-hp: #e14a65;
+  --color-atk: #dce9f3;
+  --color-def: #357cac;
+
+  /* typography — named to avoid clobbering the legacy --font-sans/--font-mono
+     vars that globals.css relies on (--font-sans = Space Grotesk there). */
+  --font-display: var(--font-sans), "Space Grotesk", system-ui, sans-serif;
+  --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-code: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
+
+  /* misc */
+  --radius-none: 0px;
+  --shadow-ore: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* -------------------------------------------------------------------------
+   Base — only what the new shell needs (legacy pages untouched).
+   ------------------------------------------------------------------------- */
+@layer base {
+  .spirit-app {
+    position: relative;
+    color: var(--color-bone);
+    font-family: var(--font-body);
+  }
+
+  /* Ore/element backdrop as its own fixed viewport layer. Same look as the
+     former `background-attachment: fixed`, but the gradients are painted once
+     and never repainted while scrolling (removes scroll jank). */
+  .spirit-app::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-color: var(--color-obsidian);
+    background-image:
+      radial-gradient(1200px 600px at 72% -10%, rgba(232, 180, 87, 0.06), transparent 60%),
+      radial-gradient(900px 520px at 6% 8%, rgba(255, 106, 61, 0.05), transparent 62%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 30%);
+  }
+
+  .font-mono-num {
+    font-family: var(--font-code);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Component primitives (brief §4–§5).
+   ------------------------------------------------------------------------- */
+@layer components {
+  /* Retire the legacy pixel display fonts (brief: Space Grotesk/Inter/JetBrains
+     Mono only). Re-points the legacy --poa-* font vars at the brand display
+     font so any not-yet-migrated rule also renders sans, never pixel. */
+  .spirit-app {
+    --poa-display: var(--font-display);
+    --poa-pixel: var(--font-display);
+  }
+
+  /* Brand typography inside the app scope — the legacy cascade styles bare
+     h1/h2/pixel headings; this (higher layer) restores Space Grotesk headings. */
+  .spirit-app :is(h1, h2, h3, h4) {
+    font-family: var(--font-display);
+  }
+
+  /* Mono panel kicker: `// WELCOME TO` */
+  .kicker {
+    font-family: var(--font-code);
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ash);
+  }
+
+  /* Angular panel with cut bottom-right corner + beveled rail. */
+  .panel {
+    position: relative;
+    background: linear-gradient(180deg, var(--color-basalt), #12161c);
+    border: 1px solid var(--color-slate);
+    clip-path: polygon(0 0, 100% 0, 100% 88%, calc(100% - 26px) 100%, 0 100%);
+    box-shadow: var(--shadow-ore);
+  }
+  .panel-flat {
+    background: linear-gradient(180deg, var(--color-basalt), #12161c);
+    border: 1px solid var(--color-slate);
+    box-shadow: var(--shadow-ore);
+  }
+
+  /* Section divider with an angled bottom edge (brief §4). */
+  .angler {
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  }
+
+  /* Primary ember CTA — beveled, glossy, glowing. */
+  .btn-ember {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #1a0d07;
+    background: linear-gradient(180deg, #ff7d52, var(--color-ember) 45%, #d94f26);
+    border: 1px solid #ff9468;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, calc(100% - 14px) 100%, 0 100%);
+    box-shadow:
+      0 0 0 1px rgba(255, 106, 61, 0.25),
+      0 10px 26px rgba(255, 106, 61, 0.28),
+      inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-ember:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 0 0 1px rgba(255, 106, 61, 0.4),
+      0 16px 34px rgba(255, 106, 61, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  /* Ghost / outline button */
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-bone);
+    background: rgba(23, 27, 34, 0.6);
+    border: 1px solid var(--color-slate);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, calc(100% - 12px) 100%, 0 100%);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-ember);
+    color: var(--color-bone);
+  }
+
+  /* Hexagon frame (flat top/bottom) — for creatures, loop nodes, mine button. */
+  .hex {
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  }
+  .hex-flat {
+    /* pointy top/bottom variant (sidebar motifs) */
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+
+  /* Element glow halo behind a card (brief §5). */
+  .glow-halo {
+    position: relative;
+  }
+  .glow-halo::before {
+    content: "";
+    position: absolute;
+    inset: -14%;
+    background: radial-gradient(closest-side, var(--glow, transparent), transparent 72%);
+    opacity: 0.5;
+    filter: blur(6px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Terminal panel (// SYSTEM) */
+  .term-line {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--color-ash);
+  }
+  .term-ok {
+    color: var(--color-moss);
+  }
+  .term-active {
+    color: #6ee7a8;
+    animation: term-pulse 1.6s ease-in-out infinite;
+  }
+}
+
+@keyframes term-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-ember { transition: none; }
+  .term-active { animation: none; }
+}

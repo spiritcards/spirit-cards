@@ -1,0 +1,246 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "08_base_art",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "default",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "stardust-cloud",
+        "nameEn": "Stardust Cloud",
+        "empty": false
+      },
+      {
+        "value": "astral-glow",
+        "nameEn": "Astral Glow",
+        "empty": false
+      },
+      {
+        "value": "wandering-wisps",
+        "nameEn": "Wandering Wisps",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "spectral-wings",
+        "nameEn": "Spectral Wings",
+        "empty": false
+      },
+      {
+        "value": "moonlight-ribbons",
+        "nameEn": "Moonlight Ribbons",
+        "empty": false
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "triple-wisp",
+        "nameEn": "Triple Wisp",
+        "empty": false
+      },
+      {
+        "value": "aurora-streamers",
+        "nameEn": "Aurora Streamers",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "moon-horns",
+        "nameEn": "Moon Horns",
+        "empty": false
+      },
+      {
+        "value": "moon-branches",
+        "nameEn": "Moon Branches",
+        "empty": false
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "astral-druse",
+        "nameEn": "Astral Druse",
+        "empty": false
+      },
+      {
+        "value": "astral-seeds",
+        "nameEn": "Astral Seeds",
+        "empty": false
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "none",
+        "nameEn": "Unmarked",
+        "empty": true
+      },
+      {
+        "value": "star-scatter",
+        "nameEn": "Star Scatter",
+        "empty": false
+      },
+      {
+        "value": "moon-dots",
+        "nameEn": "Moon Dots",
+        "empty": false
+      },
+      {
+        "value": "constellation-threads",
+        "nameEn": "Constellation Threads",
+        "empty": false
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "dream-rune",
+        "nameEn": "Dream Rune",
+        "empty": false
+      },
+      {
+        "value": "memory-seal",
+        "nameEn": "Memory Seal",
+        "empty": false
+      },
+      {
+        "value": "eclipse-sign",
+        "nameEn": "Eclipse Sign",
+        "empty": false
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "twilight-silence",
+        "nameEn": "Twilight Silence",
+        "empty": false
+      },
+      {
+        "value": "mist-chuckle",
+        "nameEn": "Mist Chuckle",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "moon-star",
+        "nameEn": "Moon Star",
+        "empty": false
+      },
+      {
+        "value": "astral-star",
+        "nameEn": "Astral Star",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "moon-spark",
+        "nameEn": "Moon Spark",
+        "empty": false
+      },
+      {
+        "value": "eclipse-wisp",
+        "nameEn": "Eclipse Wisp",
+        "empty": false
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "08_base_art",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "default",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "ember-scatter",
+        "nameEn": "Ember Scatter",
+        "empty": false
+      },
+      {
+        "value": "heat-breath",
+        "nameEn": "Heat Breath",
+        "empty": false
+      },
+      {
+        "value": "rising-sparks",
+        "nameEn": "Rising Sparks",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "ember-wings",
+        "nameEn": "Ember Wings",
+        "empty": false
+      },
+      {
+        "value": "smoke-quills",
+        "nameEn": "Smoke Quills",
+        "empty": false
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "coal-club",
+        "nameEn": "Coal Club",
+        "empty": false
+      },
+      {
+        "value": "flame-plume",
+        "nameEn": "Flame Plume",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "obsidian-horns",
+        "nameEn": "Obsidian Horns",
+        "empty": false
+      },
+      {
+        "value": "lava-curls",
+        "nameEn": "Lava Curls",
+        "empty": false
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "flame-shards",
+        "nameEn": "Flame Shards",
+        "empty": false
+      },
+      {
+        "value": "obsidian-rosette",
+        "nameEn": "Obsidian Rosette",
+        "empty": false
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "none",
+        "nameEn": "Unmarked",
+        "empty": true
+      },
+      {
+        "value": "coal-speckles",
+        "nameEn": "Coal Speckles",
+        "empty": false
+      },
+      {
+        "value": "heat-traces",
+        "nameEn": "Heat Traces",
+        "empty": false
+      },
+      {
+        "value": "lava-web",
+        "nameEn": "Lava Web",
+        "empty": false
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "spark-rune",
+        "nameEn": "Spark Rune",
+        "empty": false
+      },
+      {
+        "value": "forge-seal",
+        "nameEn": "Forge Seal",
+        "empty": false
+      },
+      {
+        "value": "coal-heart",
+        "nameEn": "Coal Heart",
+        "empty": false
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "quiet-ember",
+        "nameEn": "Quiet Ember",
+        "empty": false
+      },
+      {
+        "value": "mischief-spark",
+        "nameEn": "Mischief Spark",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "amber-gaze",
+        "nameEn": "Amber Gaze",
+        "empty": false
+      },
+      {
+        "value": "white-flame",
+        "nameEn": "White Flame",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "coal-seed",
+        "nameEn": "Coal Seed",
+        "empty": false
+      },
+      {
+        "value": "floating-hearth",
+        "nameEn": "Floating Hearth",
+        "empty": false
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

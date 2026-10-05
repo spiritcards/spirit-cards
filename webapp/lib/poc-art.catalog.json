@@ -1,0 +1,4208 @@
+{
+  "canvas": [
+    512,
+    716
+  ],
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "08_base_art",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "variableGroups": [
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating"
+  ],
+  "boxes": {
+    "name": [
+      32,
+      24,
+      479,
+      63
+    ],
+    "health": [
+      32,
+      590,
+      171,
+      657
+    ],
+    "damage": [
+      186,
+      590,
+      325,
+      657
+    ],
+    "defense": [
+      340,
+      590,
+      479,
+      657
+    ],
+    "serial": [
+      32,
+      674,
+      479,
+      695
+    ]
+  },
+  "species": [
+    {
+      "id": "fire_uglepuz",
+      "name": "Emberback",
+      "nameRu": "Углепуз",
+      "element": "fire",
+      "elementRu": "Огонь",
+      "role": "universal",
+      "path": "universal/fire_uglepuz",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "ember-scatter",
+            "nameEn": "Ember Scatter",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "heat-breath",
+            "nameEn": "Heat Breath",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "rising-sparks",
+            "nameEn": "Rising Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "ember-wings",
+            "nameEn": "Ember Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "smoke-quills",
+            "nameEn": "Smoke Quills",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "coal-club",
+            "nameEn": "Coal Club",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "flame-plume",
+            "nameEn": "Flame Plume",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "obsidian-horns",
+            "nameEn": "Obsidian Horns",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "lava-curls",
+            "nameEn": "Lava Curls",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "flame-shards",
+            "nameEn": "Flame Shards",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "obsidian-rosette",
+            "nameEn": "Obsidian Rosette",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "coal-speckles",
+            "nameEn": "Coal Speckles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "heat-traces",
+            "nameEn": "Heat Traces",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "lava-web",
+            "nameEn": "Lava Web",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "spark-rune",
+            "nameEn": "Spark Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "forge-seal",
+            "nameEn": "Forge Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "coal-heart",
+            "nameEn": "Coal Heart",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "quiet-ember",
+            "nameEn": "Quiet Ember",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "mischief-spark",
+            "nameEn": "Mischief Spark",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "amber-gaze",
+            "nameEn": "Amber Gaze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "white-flame",
+            "nameEn": "White Flame",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "coal-seed",
+            "nameEn": "Coal Seed",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "floating-hearth",
+            "nameEn": "Floating Hearth",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "water_kapleglot",
+      "name": "Ripplefin",
+      "nameRu": "Каплеглот",
+      "element": "water",
+      "elementRu": "Вода",
+      "role": "universal",
+      "path": "universal/water_kapleglot",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "droplet-scatter",
+            "nameEn": "Droplet Scatter",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "whirlpool-breath",
+            "nameEn": "Whirlpool Breath",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pearl-drift",
+            "nameEn": "Pearl Drift",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "deepwater-fins",
+            "nameEn": "Deepwater Fins",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "current-wings",
+            "nameEn": "Current Wings",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "wave-curve",
+            "nameEn": "Wave Curve",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "foam-crest",
+            "nameEn": "Foam Crest",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "tide-horns",
+            "nameEn": "Tide Horns",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "nacre-spirals",
+            "nameEn": "Nacre Spirals",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "clear-aquamarine",
+            "nameEn": "Clear Aquamarine",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "reef-aquamarine",
+            "nameEn": "Reef Aquamarine",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "deepwater-bubbles",
+            "nameEn": "Deepwater Bubbles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "current-lines",
+            "nameEn": "Current Lines",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tidal-ripples",
+            "nameEn": "Tidal Ripples",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "tide-rune",
+            "nameEn": "Tide Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "depth-seal",
+            "nameEn": "Depth Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "sea-spiral",
+            "nameEn": "Sea Spiral",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "quiet-pool",
+            "nameEn": "Quiet Pool",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "surf-laughter",
+            "nameEn": "Surf Laughter",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "sea-azure",
+            "nameEn": "Sea Azure",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pearl-glow",
+            "nameEn": "Pearl Glow",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "tide-heart",
+            "nameEn": "Tide Heart",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pearl-whirlpool",
+            "nameEn": "Pearl Whirlpool",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "earth_plastun",
+      "name": "Mossroot",
+      "nameRu": "Пластун",
+      "element": "earth",
+      "elementRu": "Земля",
+      "role": "universal",
+      "path": "universal/earth_plastun",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "forest-pollen",
+            "nameEn": "Forest Pollen",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "grove-glow",
+            "nameEn": "Grove Glow",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "floating-seeds",
+            "nameEn": "Floating Seeds",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "leaf-wings",
+            "nameEn": "Leaf Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "fern-wings",
+            "nameEn": "Fern Wings",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "mossy-tail",
+            "nameEn": "Mossy Tail",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "root-curl",
+            "nameEn": "Root Curl",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "root-horns",
+            "nameEn": "Root Horns",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "oak-forks",
+            "nameEn": "Oak Forks",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "green-druse",
+            "nameEn": "Green Druse",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moss-druse",
+            "nameEn": "Moss Druse",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "moss-speckles",
+            "nameEn": "Moss Speckles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "stone-veins",
+            "nameEn": "Stone Veins",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "growth-rings",
+            "nameEn": "Growth Rings",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "root-rune",
+            "nameEn": "Root Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "stone-seal",
+            "nameEn": "Stone Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "growth-sign",
+            "nameEn": "Growth Sign",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "grove-calm",
+            "nameEn": "Grove Calm",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "sprout-joy",
+            "nameEn": "Sprout Joy",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "mineral-rings",
+            "nameEn": "Mineral Rings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "jade-and-amber",
+            "nameEn": "Jade and Amber",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "floating-geode",
+            "nameEn": "Floating Geode",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "gravity-seed",
+            "nameEn": "Gravity Seed",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "air_vihrolap",
+      "name": "Cloudwhisk",
+      "nameRu": "Вихролап",
+      "element": "air",
+      "elementRu": "Воздух",
+      "role": "universal",
+      "path": "universal/air_vihrolap",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "cloud-dust",
+            "nameEn": "Cloud Dust",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "sky-breath",
+            "nameEn": "Sky Breath",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "breeze-ribbons",
+            "nameEn": "Breeze Ribbons",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "airstream-wings",
+            "nameEn": "Airstream Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "squall-feathers",
+            "nameEn": "Squall Feathers",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "cloud-curl",
+            "nameEn": "Cloud Curl",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "breeze-spiral",
+            "nameEn": "Breeze Spiral",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "vortex-horns",
+            "nameEn": "Vortex Horns",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "sky-crescents",
+            "nameEn": "Sky Crescents",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "sky-opal",
+            "nameEn": "Sky Opal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "opal-drops",
+            "nameEn": "Opal Drops",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "cloud-speckles",
+            "nameEn": "Cloud Speckles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "breeze-stripes",
+            "nameEn": "Breeze Stripes",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "airstream-curls",
+            "nameEn": "Airstream Curls",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "wind-rune",
+            "nameEn": "Wind Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "flight-seal",
+            "nameEn": "Flight Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "updraft-sign",
+            "nameEn": "Updraft Sign",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "breeze-whisper",
+            "nameEn": "Breeze Whisper",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "wind-smile",
+            "nameEn": "Wind Smile",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "wind-crescent",
+            "nameEn": "Wind Crescent",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "solar-whirl",
+            "nameEn": "Solar Whirl",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "vortex-core",
+            "nameEn": "Vortex Core",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "intertwined-winds",
+            "nameEn": "Intertwined Winds",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "lightning_razryadnik",
+      "name": "Flashbound",
+      "nameRu": "Разрядник",
+      "element": "lightning",
+      "elementRu": "Молния",
+      "role": "universal",
+      "path": "universal/lightning_razryadnik",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "discharge-scatter",
+            "nameEn": "Discharge Scatter",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "electric-field",
+            "nameEn": "Electric Field",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "lightning-branches",
+            "nameEn": "Lightning Branches",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "lightning-wings",
+            "nameEn": "Lightning Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "ion-ribbons",
+            "nameEn": "Ion Ribbons",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "lightning-bend",
+            "nameEn": "Lightning Bend",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "twin-bolt",
+            "nameEn": "Twin Bolt",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "spark-antennas",
+            "nameEn": "Spark Antennas",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "discharge-arcs",
+            "nameEn": "Discharge Arcs",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "storm-crystal",
+            "nameEn": "Storm Crystal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "amethyst-conductors",
+            "nameEn": "Amethyst Conductors",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "spark-speckles",
+            "nameEn": "Spark Speckles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "storm-zigzags",
+            "nameEn": "Storm Zigzags",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "discharge-chain",
+            "nameEn": "Discharge Chain",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "discharge-rune",
+            "nameEn": "Discharge Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "thunder-seal",
+            "nameEn": "Thunder Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "paired-lightning",
+            "nameEn": "Paired Lightning",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "storm-calm",
+            "nameEn": "Storm Calm",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "spark-grin",
+            "nameEn": "Spark Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "lightning-pupil",
+            "nameEn": "Lightning Pupil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "white-flash",
+            "nameEn": "White Flash",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "storm-orb",
+            "nameEn": "Storm Orb",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "lightning-knot",
+            "nameEn": "Lightning Knot",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "ice_inezhor",
+      "name": "Frostpuff",
+      "nameRu": "Инежор",
+      "element": "ice",
+      "elementRu": "Лёд",
+      "role": "universal",
+      "path": "universal/ice_inezhor",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "snow-dust",
+            "nameEn": "Snow Dust",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "frost-glow",
+            "nameEn": "Frost Glow",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "polar-snowflakes",
+            "nameEn": "Polar Snowflakes",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "frost-wings",
+            "nameEn": "Frost Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "polar-ribbons",
+            "nameEn": "Polar Ribbons",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "snow-tail",
+            "nameEn": "Snow Tail",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "snow-pompon",
+            "nameEn": "Snow Pompom",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "smooth-ice",
+            "nameEn": "Smooth Ice",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "ice-arcs",
+            "nameEn": "Ice Arcs",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "ice-druse",
+            "nameEn": "Ice Druse",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "frost-rosette",
+            "nameEn": "Frost Rosette",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "snow-speckles",
+            "nameEn": "Snow Speckles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "ice-veins",
+            "nameEn": "Ice Veins",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "frost-lattice",
+            "nameEn": "Frost Lattice",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rime-rune",
+            "nameEn": "Rime Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "winter-seal",
+            "nameEn": "Winter Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "snow-facet",
+            "nameEn": "Snow Facet",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "winter-silence",
+            "nameEn": "Winter Silence",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "snow-grin",
+            "nameEn": "Snow Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "ice-diamond",
+            "nameEn": "Ice Diamond",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "northern-crystal",
+            "nameEn": "Northern Crystal",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "frost-core",
+            "nameEn": "Frost Core",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "snow-lens",
+            "nameEn": "Snow Lens",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "metal_ferron",
+      "name": "Quicksilver",
+      "nameRu": "Феррон",
+      "element": "metal",
+      "elementRu": "Металл",
+      "role": "universal",
+      "path": "universal/metal_ferron",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "metal-dust",
+            "nameEn": "Metal Dust",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "silver-gleam",
+            "nameEn": "Silver Gleam",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "reflection-shards",
+            "nameEn": "Reflection Shards",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "living-silver",
+            "nameEn": "Living Silver",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "silver-petals",
+            "nameEn": "Silver Petals",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "mercury-tail",
+            "nameEn": "Mercury Tail",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "twin-droplet",
+            "nameEn": "Twin Droplet",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "mercury-horns",
+            "nameEn": "Mercury Horns",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "mercury-loops",
+            "nameEn": "Mercury Loops",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "chrome-druse",
+            "nameEn": "Chrome Druse",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "bismuth-bloom",
+            "nameEn": "Bismuth Bloom",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "chrome-speckles",
+            "nameEn": "Chrome Speckles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "flowing-strokes",
+            "nameEn": "Flowing Strokes",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "reflection-lines",
+            "nameEn": "Reflection Lines",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "alloy-rune",
+            "nameEn": "Alloy Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "reflection-seal",
+            "nameEn": "Reflection Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "flowing-metal",
+            "nameEn": "Flowing Metal",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "mercury-calm",
+            "nameEn": "Mercury Calm",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "chrome-grin",
+            "nameEn": "Chrome Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "amber-slit",
+            "nameEn": "Amber Slit",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "platinum-slit",
+            "nameEn": "Platinum Slit",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "liquid-knot",
+            "nameEn": "Liquid Knot",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "mercury-ring",
+            "nameEn": "Mercury Ring",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "spirit_sumraks",
+      "name": "Moonglimmer",
+      "nameRu": "Сумракс",
+      "element": "spirit",
+      "elementRu": "Дух",
+      "role": "universal",
+      "path": "universal/spirit_sumraks",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "default",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "stardust-cloud",
+            "nameEn": "Stardust Cloud",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "astral-glow",
+            "nameEn": "Astral Glow",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "wandering-wisps",
+            "nameEn": "Wandering Wisps",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "spectral-wings",
+            "nameEn": "Spectral Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moonlight-ribbons",
+            "nameEn": "Moonlight Ribbons",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "triple-wisp",
+            "nameEn": "Triple Wisp",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "aurora-streamers",
+            "nameEn": "Aurora Streamers",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "moon-horns",
+            "nameEn": "Moon Horns",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moon-branches",
+            "nameEn": "Moon Branches",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "astral-druse",
+            "nameEn": "Astral Druse",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "astral-seeds",
+            "nameEn": "Astral Seeds",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "none",
+            "nameEn": "Unmarked",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "star-scatter",
+            "nameEn": "Star Scatter",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moon-dots",
+            "nameEn": "Moon Dots",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "constellation-threads",
+            "nameEn": "Constellation Threads",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "dream-rune",
+            "nameEn": "Dream Rune",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "memory-seal",
+            "nameEn": "Memory Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "eclipse-sign",
+            "nameEn": "Eclipse Sign",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "twilight-silence",
+            "nameEn": "Twilight Silence",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "mist-chuckle",
+            "nameEn": "Mist Chuckle",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "moon-star",
+            "nameEn": "Moon Star",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "astral-star",
+            "nameEn": "Astral Star",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "moon-spark",
+            "nameEn": "Moon Spark",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "eclipse-wisp",
+            "nameEn": "Eclipse Wisp",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "fire_dragon",
+      "name": "Cindermaw",
+      "nameRu": null,
+      "element": "fire",
+      "elementRu": "Огонь",
+      "role": "attack",
+      "path": "attack/fire_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "ember-scatter",
+            "nameEn": "Ember Scatter",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "heat-breath",
+            "nameEn": "Heat Breath",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "rising-sparks",
+            "nameEn": "Rising Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "ember-sails",
+            "nameEn": "Ember Sails",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "inferno-fans",
+            "nameEn": "Inferno Fans",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Ember Curl",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Wildfire Sweep",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "obsidian-hooks",
+            "nameEn": "Obsidian Hooks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "molten-tines",
+            "nameEn": "Molten Tines",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "cinder-cluster",
+            "nameEn": "Cinder Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "sunshard-cluster",
+            "nameEn": "Sunshard Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "ember-veins",
+            "nameEn": "Ember Veins",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "ash-flecks",
+            "nameEn": "Ash Flecks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "kindling-sigil",
+            "nameEn": "Kindling Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "solar-script",
+            "nameEn": "Solar Script",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Banked Flame",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Mischief Spark",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Coal Gaze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Furnace Gaze",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "ember-seed",
+            "nameEn": "Ember Seed",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "volcanic-spark",
+            "nameEn": "Volcanic Spark",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "water_dragon",
+      "name": "Tidecoil",
+      "nameRu": null,
+      "element": "water",
+      "elementRu": "Вода",
+      "role": "attack",
+      "path": "attack/water_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "droplet-scatter",
+            "nameEn": "Droplet Scatter",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "whirlpool-breath",
+            "nameEn": "Whirlpool Breath",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pearl-drift",
+            "nameEn": "Pearl Drift",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "tidal-fins",
+            "nameEn": "Tidal Fins",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "foam-wings",
+            "nameEn": "Foam Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Current Coil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Cresting Wave",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "pearl-curls",
+            "nameEn": "Pearl Curls",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "coral-prongs",
+            "nameEn": "Coral Prongs",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "tideglass-cluster",
+            "nameEn": "Tideglass Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pearlstone-cluster",
+            "nameEn": "Pearlstone Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "ripple-lines",
+            "nameEn": "Ripple Lines",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pearl-specks",
+            "nameEn": "Pearl Specks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "current-sigil",
+            "nameEn": "Current Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "deepwater-script",
+            "nameEn": "Deepwater Script",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Still Tide",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Ripple Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Lagoon Gaze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Deepwater Glow",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "tidal-orb",
+            "nameEn": "Tidal Orb",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moonpearl",
+            "nameEn": "Moonpearl",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "earth_dragon",
+      "name": "Rootwaker",
+      "nameRu": null,
+      "element": "earth",
+      "elementRu": "Земля",
+      "role": "attack",
+      "path": "attack/earth_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "forest-pollen",
+            "nameEn": "Forest Pollen",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "grove-glow",
+            "nameEn": "Grove Glow",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "floating-seeds",
+            "nameEn": "Floating Seeds",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "canopy-sails",
+            "nameEn": "Canopy Sails",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "petrified-fans",
+            "nameEn": "Petrified Fans",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Burrow Curl",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Verdant Sweep",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "root-antlers",
+            "nameEn": "Root Antlers",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "bedrock-spurs",
+            "nameEn": "Bedrock Spurs",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "amberbloom-cluster",
+            "nameEn": "Amberbloom Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "mossquartz-cluster",
+            "nameEn": "Mossquartz Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "strata-lines",
+            "nameEn": "Strata Lines",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "lichen-flecks",
+            "nameEn": "Lichen Flecks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "wildroot-sigil",
+            "nameEn": "Wildroot Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "bedrock-seal",
+            "nameEn": "Bedrock Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Quiet Grove",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Woodland Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Amber Grove",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Saplight Gaze",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "seedheart",
+            "nameEn": "Seedheart",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "gaia-geode",
+            "nameEn": "Gaia Geode",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "air_dragon",
+      "name": "Zephyrcrest",
+      "nameRu": null,
+      "element": "air",
+      "elementRu": "Воздух",
+      "role": "attack",
+      "path": "attack/air_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "cloud-dust",
+            "nameEn": "Cloud Dust",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "sky-breath",
+            "nameEn": "Sky Breath",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "breeze-ribbons",
+            "nameEn": "Breeze Ribbons",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "cirrus-fans",
+            "nameEn": "Cirrus Fans",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "jetstream-plumes",
+            "nameEn": "Jetstream Plumes",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Draft Curl",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Gale Stream",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "gale-curls",
+            "nameEn": "Gale Curls",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "skyswept-prongs",
+            "nameEn": "Skyswept Prongs",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "cloudglass-cluster",
+            "nameEn": "Cloudglass Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "aetherquartz-cluster",
+            "nameEn": "Aetherquartz Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "slipstream-traces",
+            "nameEn": "Slipstream Traces",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "cloud-dapple",
+            "nameEn": "Cloud Dapple",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "gale-sigil",
+            "nameEn": "Gale Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "skyward-seal",
+            "nameEn": "Skyward Seal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Soft Breeze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Zephyr Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Sky Gaze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Windlit Gaze",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "whirlseed",
+            "nameEn": "Whirlseed",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "skybell",
+            "nameEn": "Skybell",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "lightning_dragon",
+      "name": "Voltrush",
+      "nameRu": null,
+      "element": "lightning",
+      "elementRu": "Молния",
+      "role": "attack",
+      "path": "attack/lightning_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "discharge-scatter",
+            "nameEn": "Discharge Scatter",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "electric-field",
+            "nameEn": "Electric Field",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "lightning-branches",
+            "nameEn": "Lightning Branches",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "storm-vanes",
+            "nameEn": "Storm Vanes",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "arc-fans",
+            "nameEn": "Arc Fans",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Bolt Trail",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Arc Whip",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "forked-conductors",
+            "nameEn": "Forked Conductors",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "bolt-spires",
+            "nameEn": "Bolt Spires",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "fulgurite-bloom",
+            "nameEn": "Fulgurite Bloom",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "stormglass-shards",
+            "nameEn": "Stormglass Shards",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "static-flecks",
+            "nameEn": "Static Flecks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "circuit-traces",
+            "nameEn": "Circuit Traces",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "charge-sigil",
+            "nameEn": "Charge Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "storm-script",
+            "nameEn": "Storm Script",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Held Charge",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Live Wire Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Charge Gaze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Stormglass Gaze",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "ball-lightning",
+            "nameEn": "Ball Lightning",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "thunder-seed",
+            "nameEn": "Thunder Seed",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "ice_dragon",
+      "name": "Frostmane",
+      "nameRu": null,
+      "element": "ice",
+      "elementRu": "Лёд",
+      "role": "attack",
+      "path": "attack/ice_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "snow-dust",
+            "nameEn": "Snow Dust",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "frost-glow",
+            "nameEn": "Frost Glow",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "polar-snowflakes",
+            "nameEn": "Polar Snowflakes",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "rime-plumes",
+            "nameEn": "Rime Plumes",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "aurora-fins",
+            "nameEn": "Aurora Fins",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Snowdrift Curl",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Frostwake Plume",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "hoarfrost-curls",
+            "nameEn": "Hoarfrost Curls",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "glacier-prongs",
+            "nameEn": "Glacier Prongs",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "rimegarden",
+            "nameEn": "Rimegarden",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "blueheart-crystals",
+            "nameEn": "Blueheart Crystals",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "snow-lace",
+            "nameEn": "Snow Lace",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "glacier-veins",
+            "nameEn": "Glacier Veins",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "winter-sigil",
+            "nameEn": "Winter Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "boreal-script",
+            "nameEn": "Boreal Script",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Still Snow",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Snowbound Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Glacier Gaze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Polar Glow",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "winter-star",
+            "nameEn": "Winter Star",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "hailheart",
+            "nameEn": "Hailheart",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "metal_dragon",
+      "name": "Silvervein",
+      "nameRu": null,
+      "element": "metal",
+      "elementRu": "Металл",
+      "role": "attack",
+      "path": "attack/metal_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "metal-dust",
+            "nameEn": "Metal Dust",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "silver-gleam",
+            "nameEn": "Silver Gleam",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "reflection-shards",
+            "nameEn": "Reflection Shards",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "mercury-sails",
+            "nameEn": "Mercury Sails",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "silver-plumes",
+            "nameEn": "Silver Plumes",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Chrome Sweep",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Quicksilver Ribbon",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "mercury-hooks",
+            "nameEn": "Mercury Hooks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "silver-antlers",
+            "nameEn": "Silver Antlers",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "mirrorstone-cluster",
+            "nameEn": "Mirrorstone Cluster",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "quicksilver-bloom",
+            "nameEn": "Quicksilver Bloom",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "mirror-streaks",
+            "nameEn": "Mirror Streaks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "silver-flecks",
+            "nameEn": "Silver Flecks",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "alloy-sigil",
+            "nameEn": "Alloy Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "mercury-script",
+            "nameEn": "Mercury Script",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Polished Calm",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Mercury Grin",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Amber Lens",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Forge Lens",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "mercury-droplet",
+            "nameEn": "Mercury Droplet",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "magnet-star",
+            "nameEn": "Magnet Star",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "spirit_dragon",
+      "name": "Starwisp",
+      "nameRu": null,
+      "element": "spirit",
+      "elementRu": "Дух",
+      "role": "attack",
+      "path": "attack/spirit_dragon",
+      "fixed": {
+        "00_canvas": "default",
+        "01_background": "default",
+        "08_base_art": "clean-base",
+        "15_card_frame": "default",
+        "17_stats": "default"
+      },
+      "groups": {
+        "02_material": [
+          {
+            "value": "none",
+            "nameEn": "Original Scene",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "brushed-metal",
+            "nameEn": "Brushed Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "tinted-metal",
+            "nameEn": "Tinted Metal",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "crystal-facets",
+            "nameEn": "Crystal Facets",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "03_effects": [
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "stardust-cloud",
+            "nameEn": "Stardust Cloud",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "astral-glow",
+            "nameEn": "Astral Glow",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "wandering-wisps",
+            "nameEn": "Wandering Wisps",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "04_wings": [
+          {
+            "value": "dream-wisps",
+            "nameEn": "Dream Wisps",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moon-moth-wings",
+            "nameEn": "Moon Moth Wings",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "05_tail": [
+          {
+            "value": "base",
+            "nameEn": "Moonlit Drift",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "variant",
+            "nameEn": "Starfall Veil",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "06_horns": [
+          {
+            "value": "crescent-horns",
+            "nameEn": "Crescent Horns",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "starlight-antlers",
+            "nameEn": "Starlight Antlers",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "07_crystals": [
+          {
+            "value": "moonstone-bloom",
+            "nameEn": "Moonstone Bloom",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "dreamglass-spires",
+            "nameEn": "Dreamglass Spires",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "09_markings": [
+          {
+            "value": "constellation-trails",
+            "nameEn": "Constellation Trails",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "stardust-freckles",
+            "nameEn": "Stardust Freckles",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "10_runes": [
+          {
+            "value": "dream-sigil",
+            "nameEn": "Dream Sigil",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moonlit-script",
+            "nameEn": "Moonlit Script",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "11_expression": [
+          {
+            "value": "calm",
+            "nameEn": "Quiet Dream",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "playful",
+            "nameEn": "Starlit Smile",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "12_eyes": [
+          {
+            "value": "base",
+            "nameEn": "Astral Gaze",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "luminous",
+            "nameEn": "Nebula Glow",
+            "nameRu": null,
+            "empty": false
+          }
+        ],
+        "13_artifact": [
+          {
+            "value": "wandering-star",
+            "nameEn": "Wandering Star",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "moon-echo",
+            "nameEn": "Moon Echo",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "none",
+            "nameEn": "None",
+            "nameRu": null,
+            "empty": true
+          }
+        ],
+        "14_coating": [
+          {
+            "value": "none",
+            "nameEn": "No Coating",
+            "nameRu": null,
+            "empty": true
+          },
+          {
+            "value": "rainbow-bands",
+            "nameEn": "Rainbow Bands",
+            "nameRu": null,
+            "empty": false
+          },
+          {
+            "value": "pixel-sparks",
+            "nameEn": "Pixel Sparks",
+            "nameRu": null,
+            "empty": false
+          }
+        ]
+      }
+    }
+  ]
+}

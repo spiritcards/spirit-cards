@@ -1,0 +1,246 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "08_base_art",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "default",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "metal-dust",
+        "nameEn": "Metal Dust",
+        "empty": false
+      },
+      {
+        "value": "silver-gleam",
+        "nameEn": "Silver Gleam",
+        "empty": false
+      },
+      {
+        "value": "reflection-shards",
+        "nameEn": "Reflection Shards",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "living-silver",
+        "nameEn": "Living Silver",
+        "empty": false
+      },
+      {
+        "value": "silver-petals",
+        "nameEn": "Silver Petals",
+        "empty": false
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "mercury-tail",
+        "nameEn": "Mercury Tail",
+        "empty": false
+      },
+      {
+        "value": "twin-droplet",
+        "nameEn": "Twin Droplet",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "mercury-horns",
+        "nameEn": "Mercury Horns",
+        "empty": false
+      },
+      {
+        "value": "mercury-loops",
+        "nameEn": "Mercury Loops",
+        "empty": false
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "chrome-druse",
+        "nameEn": "Chrome Druse",
+        "empty": false
+      },
+      {
+        "value": "bismuth-bloom",
+        "nameEn": "Bismuth Bloom",
+        "empty": false
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "none",
+        "nameEn": "Unmarked",
+        "empty": true
+      },
+      {
+        "value": "chrome-speckles",
+        "nameEn": "Chrome Speckles",
+        "empty": false
+      },
+      {
+        "value": "flowing-strokes",
+        "nameEn": "Flowing Strokes",
+        "empty": false
+      },
+      {
+        "value": "reflection-lines",
+        "nameEn": "Reflection Lines",
+        "empty": false
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "alloy-rune",
+        "nameEn": "Alloy Rune",
+        "empty": false
+      },
+      {
+        "value": "reflection-seal",
+        "nameEn": "Reflection Seal",
+        "empty": false
+      },
+      {
+        "value": "flowing-metal",
+        "nameEn": "Flowing Metal",
+        "empty": false
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "mercury-calm",
+        "nameEn": "Mercury Calm",
+        "empty": false
+      },
+      {
+        "value": "chrome-grin",
+        "nameEn": "Chrome Grin",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "amber-slit",
+        "nameEn": "Amber Slit",
+        "empty": false
+      },
+      {
+        "value": "platinum-slit",
+        "nameEn": "Platinum Slit",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "liquid-knot",
+        "nameEn": "Liquid Knot",
+        "empty": false
+      },
+      {
+        "value": "mercury-ring",
+        "nameEn": "Mercury Ring",
+        "empty": false
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

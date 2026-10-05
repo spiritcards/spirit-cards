@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a bug in contracts, webapp, miner, or docs
+title: "[bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. For **security** issues, do NOT use this form — use
+        GitHub Security Advisories instead (see SECURITY.md).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - contracts
+        - webapp
+        - miner
+        - docs
+        - ops / infra
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: A clear description of the bug and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "chainId, browser, node/forge version, commit"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / evidence
+      description: Paste logs, tx hashes, screenshots. NO secrets or seed phrases.
+      render: shell
+    validations:
+      required: false

@@ -1,0 +1,40 @@
+{
+  "name": "spirit-cards-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check:traits": "tsx scripts/check-traits.mjs",
+    "check:rarity": "tsx scripts/check-rarity.mjs",
+    "check:hc2": "tsx scripts/check-hc2.mjs",
+    "render:uniques": "tsx scripts/render-unique-smoke.mjs",
+    "check:addresses": "node scripts/check-addresses.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/blob": "^2.8.0",
+    "@vercel/speed-insights": "^2.0.0",
+    "@walletconnect/ethereum-provider": "^2.25.0",
+    "mcp-handler": "^2.1.1",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.35.4",
+    "viem": "^2.21.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "typescript": "^5.7.0"
+  }
+}

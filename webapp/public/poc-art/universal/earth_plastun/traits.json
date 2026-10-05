@@ -1,0 +1,246 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "08_base_art",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "default",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "forest-pollen",
+        "nameEn": "Forest Pollen",
+        "empty": false
+      },
+      {
+        "value": "grove-glow",
+        "nameEn": "Grove Glow",
+        "empty": false
+      },
+      {
+        "value": "floating-seeds",
+        "nameEn": "Floating Seeds",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "leaf-wings",
+        "nameEn": "Leaf Wings",
+        "empty": false
+      },
+      {
+        "value": "fern-wings",
+        "nameEn": "Fern Wings",
+        "empty": false
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "mossy-tail",
+        "nameEn": "Mossy Tail",
+        "empty": false
+      },
+      {
+        "value": "root-curl",
+        "nameEn": "Root Curl",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "root-horns",
+        "nameEn": "Root Horns",
+        "empty": false
+      },
+      {
+        "value": "oak-forks",
+        "nameEn": "Oak Forks",
+        "empty": false
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "green-druse",
+        "nameEn": "Green Druse",
+        "empty": false
+      },
+      {
+        "value": "moss-druse",
+        "nameEn": "Moss Druse",
+        "empty": false
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "none",
+        "nameEn": "Unmarked",
+        "empty": true
+      },
+      {
+        "value": "moss-speckles",
+        "nameEn": "Moss Speckles",
+        "empty": false
+      },
+      {
+        "value": "stone-veins",
+        "nameEn": "Stone Veins",
+        "empty": false
+      },
+      {
+        "value": "growth-rings",
+        "nameEn": "Growth Rings",
+        "empty": false
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "root-rune",
+        "nameEn": "Root Rune",
+        "empty": false
+      },
+      {
+        "value": "stone-seal",
+        "nameEn": "Stone Seal",
+        "empty": false
+      },
+      {
+        "value": "growth-sign",
+        "nameEn": "Growth Sign",
+        "empty": false
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "grove-calm",
+        "nameEn": "Grove Calm",
+        "empty": false
+      },
+      {
+        "value": "sprout-joy",
+        "nameEn": "Sprout Joy",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "mineral-rings",
+        "nameEn": "Mineral Rings",
+        "empty": false
+      },
+      {
+        "value": "jade-and-amber",
+        "nameEn": "Jade and Amber",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "floating-geode",
+        "nameEn": "Floating Geode",
+        "empty": false
+      },
+      {
+        "value": "gravity-seed",
+        "nameEn": "Gravity Seed",
+        "empty": false
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}

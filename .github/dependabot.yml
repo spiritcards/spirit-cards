@@ -1,0 +1,27 @@
+version: 2
+updates:
+  # webapp (npm)
+  - package-ecosystem: "npm"
+    directory: "/webapp"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "webapp"]
+    groups:
+      npm-minor-patch:
+        update-types: ["minor", "patch"]
+
+  # miner (npm)
+  - package-ecosystem: "npm"
+    directory: "/miner"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "miner"]
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies", "ci"]

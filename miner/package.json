@@ -1,0 +1,22 @@
+{
+  "name": "pow-cards-miner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone PoW miner + measurement tooling for Spirit Cards (SPC) on Robinhood Chain.",
+  "bin": {
+    "poc-mine": "mine.mjs",
+    "poc-measure": "measure.mjs"
+  },
+  "scripts": {
+    "measure": "node measure.mjs",
+    "mine": "node mine.mjs"
+  },
+  "dependencies": {
+    "js-sha3": "^0.8.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

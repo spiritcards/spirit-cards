@@ -1,0 +1,246 @@
+{
+  "zOrder": [
+    "00_canvas",
+    "01_background",
+    "02_material",
+    "03_effects",
+    "04_wings",
+    "05_tail",
+    "06_horns",
+    "07_crystals",
+    "08_base_art",
+    "09_markings",
+    "10_runes",
+    "11_expression",
+    "12_eyes",
+    "13_artifact",
+    "14_coating",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixedGroups": [
+    "00_canvas",
+    "01_background",
+    "08_base_art",
+    "15_card_frame",
+    "17_stats"
+  ],
+  "fixed": {
+    "00_canvas": "default",
+    "01_background": "default",
+    "08_base_art": "default",
+    "15_card_frame": "default",
+    "17_stats": "default"
+  },
+  "groups": {
+    "02_material": [
+      {
+        "value": "none",
+        "nameEn": "Original Scene",
+        "empty": true
+      },
+      {
+        "value": "brushed-metal",
+        "nameEn": "Brushed Metal",
+        "empty": false
+      },
+      {
+        "value": "tinted-metal",
+        "nameEn": "Tinted Metal",
+        "empty": false
+      },
+      {
+        "value": "crystal-facets",
+        "nameEn": "Crystal Facets",
+        "empty": false
+      }
+    ],
+    "03_effects": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "snow-dust",
+        "nameEn": "Snow Dust",
+        "empty": false
+      },
+      {
+        "value": "frost-glow",
+        "nameEn": "Frost Glow",
+        "empty": false
+      },
+      {
+        "value": "polar-snowflakes",
+        "nameEn": "Polar Snowflakes",
+        "empty": false
+      }
+    ],
+    "04_wings": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "frost-wings",
+        "nameEn": "Frost Wings",
+        "empty": false
+      },
+      {
+        "value": "polar-ribbons",
+        "nameEn": "Polar Ribbons",
+        "empty": false
+      }
+    ],
+    "05_tail": [
+      {
+        "value": "snow-tail",
+        "nameEn": "Snow Tail",
+        "empty": false
+      },
+      {
+        "value": "snow-pompon",
+        "nameEn": "Snow Pompom",
+        "empty": false
+      }
+    ],
+    "06_horns": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "smooth-ice",
+        "nameEn": "Smooth Ice",
+        "empty": false
+      },
+      {
+        "value": "ice-arcs",
+        "nameEn": "Ice Arcs",
+        "empty": false
+      }
+    ],
+    "07_crystals": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "ice-druse",
+        "nameEn": "Ice Druse",
+        "empty": false
+      },
+      {
+        "value": "frost-rosette",
+        "nameEn": "Frost Rosette",
+        "empty": false
+      }
+    ],
+    "09_markings": [
+      {
+        "value": "none",
+        "nameEn": "Unmarked",
+        "empty": true
+      },
+      {
+        "value": "snow-speckles",
+        "nameEn": "Snow Speckles",
+        "empty": false
+      },
+      {
+        "value": "ice-veins",
+        "nameEn": "Ice Veins",
+        "empty": false
+      },
+      {
+        "value": "frost-lattice",
+        "nameEn": "Frost Lattice",
+        "empty": false
+      }
+    ],
+    "10_runes": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "rime-rune",
+        "nameEn": "Rime Rune",
+        "empty": false
+      },
+      {
+        "value": "winter-seal",
+        "nameEn": "Winter Seal",
+        "empty": false
+      },
+      {
+        "value": "snow-facet",
+        "nameEn": "Snow Facet",
+        "empty": false
+      }
+    ],
+    "11_expression": [
+      {
+        "value": "winter-silence",
+        "nameEn": "Winter Silence",
+        "empty": false
+      },
+      {
+        "value": "snow-grin",
+        "nameEn": "Snow Grin",
+        "empty": false
+      }
+    ],
+    "12_eyes": [
+      {
+        "value": "ice-diamond",
+        "nameEn": "Ice Diamond",
+        "empty": false
+      },
+      {
+        "value": "northern-crystal",
+        "nameEn": "Northern Crystal",
+        "empty": false
+      }
+    ],
+    "13_artifact": [
+      {
+        "value": "none",
+        "nameEn": "None",
+        "empty": true
+      },
+      {
+        "value": "frost-core",
+        "nameEn": "Frost Core",
+        "empty": false
+      },
+      {
+        "value": "snow-lens",
+        "nameEn": "Snow Lens",
+        "empty": false
+      }
+    ],
+    "14_coating": [
+      {
+        "value": "none",
+        "nameEn": "No Coating",
+        "empty": true
+      },
+      {
+        "value": "rainbow-bands",
+        "nameEn": "Rainbow Bands",
+        "empty": false
+      },
+      {
+        "value": "pixel-sparks",
+        "nameEn": "Pixel Sparks",
+        "empty": false
+      }
+    ]
+  }
+}
