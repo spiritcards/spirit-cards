@@ -20,8 +20,7 @@ const GITBOOK_ZH_URL = "/zh/docs";
 const X_URL = "https://x.com/spirit_card";
 // Official Telegram chat.
 const TELEGRAM_URL = "https://t.me/spirit_cards_game";
-// PLACEHOLDER LINK — TODO(poc): replace with the project's real GitHub org.
-// (previous value pointed at a Season 1 org; see PLACEHOLDERS.md)
+// Official GitHub account (public repos: spirit-cards, spirit-cards-docs, spirit-cards-mcp).
 const GITHUB_URL = "https://github.com/spiritcards";
 
 export function SiteFooter() {
