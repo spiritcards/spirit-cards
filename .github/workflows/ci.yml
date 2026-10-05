@@ -27,7 +27,10 @@ jobs:
         with:
           version: stable
       - name: Install deps (forge-std)
-        run: git clone --depth 1 https://github.com/foundry-rs/forge-std lib/forge-std
+        run: |
+          if [ ! -d lib/forge-std ]; then
+            git clone --depth 1 https://github.com/foundry-rs/forge-std lib/forge-std
+          fi
       - name: forge fmt --check
         run: forge fmt --check
         continue-on-error: true
