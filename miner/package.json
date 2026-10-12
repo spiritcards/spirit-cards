@@ -13,7 +13,7 @@
     "mine": "node mine.mjs"
   },
   "dependencies": {
-    "js-sha3": "^0.8.0",
+    "js-sha3": "^0.13.0",
     "viem": "^2.21.0"
   },
   "engines": {
